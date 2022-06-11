@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "prepublish": "tsc",
   "files": [
-    "dist"
+    "src"
   ],
   "keywords": [
     "react-native",
@@ -89,7 +89,7 @@
     "testPathIgnorePatterns": [
       "./src/searchbar/__tests__/common.tsx",
       "<rootDir>/node_modules",
-      "<rootDir>/dist"
+      "<rootDir>/src"
     ],
     "coveragePathIgnorePatterns": [
       "./src/searchbar/__tests__/common.tsx"
