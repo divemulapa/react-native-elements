@@ -8,6 +8,7 @@ import {
   ModalProps,
   ViewStyle,
   StyleProp,
+  KeyboardAvoidingView
 } from 'react-native';
 import Color from 'color';
 import { InlinePressableProps, RneFunctionComponent } from '../helpers';
@@ -65,7 +66,8 @@ export const Overlay: RneFunctionComponent<OverlayProps> = ({
       {...{ onPressOut, onPressIn, onLongPress }}
     />
 
-    <View
+    <KeyboardAvoidingView
+      behavior={"position"}
       testID="RNE__Overlay__Container"
       style={styles.container}
       pointerEvents="box-none"
@@ -86,7 +88,7 @@ export const Overlay: RneFunctionComponent<OverlayProps> = ({
       >
         {children}
       </View>
-    </View>
+    </KeyboardAvoidingView>
   </ModalComponent>
 );
 
