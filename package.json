@@ -2,8 +2,7 @@
   "name": "react-native-elements",
   "version": "3.4.2",
   "description": "React Native Elements & UI Toolkit",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
   "prepublish": "tsc",
   "files": [
     "dist"
