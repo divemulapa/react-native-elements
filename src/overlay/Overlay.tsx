@@ -8,6 +8,7 @@ import {
   ModalProps,
   ViewStyle,
   StyleProp,
+  KeyboardAvoidingView
 } from 'react-native';
 import { withTheme } from '../config';
 import { RneFunctionComponent } from '../helpers';
@@ -47,7 +48,7 @@ const Overlay: RneFunctionComponent<OverlayProps> = ({
       />
     </TouchableWithoutFeedback>
 
-    <View style={styles.container} pointerEvents="box-none">
+    <KeyboardAvoidingView behavior={"height"} style={styles.container} pointerEvents="box-none">
       <View
         style={StyleSheet.flatten([
           styles.overlay,
@@ -57,7 +58,7 @@ const Overlay: RneFunctionComponent<OverlayProps> = ({
       >
         {children}
       </View>
-    </View>
+    </KeyboardAvoidingView>
   </ModalComponent>
 );
 
