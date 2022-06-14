@@ -48,7 +48,7 @@ const Overlay: RneFunctionComponent<OverlayProps> = ({
       />
     </TouchableWithoutFeedback>
 
-    <KeyboardAvoidingView behavior={"height"} style={styles.container} pointerEvents="box-none">
+    <KeyboardAvoidingView behavior={"position"} style={styles.container} pointerEvents="box-none">
       <View
         style={StyleSheet.flatten([
           styles.overlay,
@@ -81,8 +81,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
   fullscreen: {
     width: '100%',
