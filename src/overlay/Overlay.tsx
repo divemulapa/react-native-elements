@@ -48,7 +48,7 @@ const Overlay: RneFunctionComponent<OverlayProps> = ({
       />
     </TouchableWithoutFeedback>
 
-    <KeyboardAvoidingView behavior={"position"} style={styles.container} pointerEvents="box-none">
+    <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "position": "padding"} style={styles.container} pointerEvents="box-none">
       <View
         style={StyleSheet.flatten([
           styles.overlay,
